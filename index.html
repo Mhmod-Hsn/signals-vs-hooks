@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signals demo overview</title>
+    <style>
+      * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: #f4f4f0; color: #202923; font-family: system-ui, sans-serif; }
+      main { max-width: 860px; margin: 0 auto; padding: 12vh 28px 60px; } .eyebrow { color: #788678; font: 11px 'DM Mono', monospace; letter-spacing: .1em; }
+      h1 { font-size: clamp(50px, 9vw, 86px); line-height: .98; letter-spacing: -.075em; margin: 18px 0; } p { color: #657068; max-width: 550px; line-height: 1.7; }
+      nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 44px; } a { color: inherit; text-decoration: none; }
+      nav a { border: 1px solid #e0e5dc; background: white; border-radius: 14px; padding: 22px; transition: transform .16s, border .16s; } nav a:hover { transform: translateY(-3px); border-color: #9aab9c; }
+      nav small { color: #788678; font: 10px 'DM Mono', monospace; letter-spacing: .08em; } nav h2 { margin: 12px 0 5px; font-size: 22px; } nav p { margin: 0; font-size: 13px; }
+      @media(max-width:600px) { main { padding: 8vh 20px; } nav { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">A SMALL INTERACTIVE DEMO</p>
+      <h1>React state<br />& signals</h1>
+      <p>Two matching apps. One shared value. See what updates when you click the button.</p>
+      <nav>
+        <a href="./hooks-demo/"><small>DEMO 01</small><h2>React state →</h2><p>State flows through React; all 300 cells render again.</p></a>
+        <a href="./signals-demo/"><small>DEMO 02</small><h2>Signals →</h2><p>Each value listens to a signal; React components stay put.</p></a>
+      </nav>
+    </main>
+  </body>
+</html>
